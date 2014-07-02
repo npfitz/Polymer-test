@@ -1,0 +1,24 @@
+
+
+
+<polymer-element name="admin-topic" attributes="currentPage" layout vertical center>
+<template>
+
+	<link rel="stylesheet" href="admin-topic.css">
+	<core-selector class="page" on-core-activate="{{changePage}}" layout horizontal wrap justified>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+
+</template>
+<script>
+	Polymer('admin-topic', {
+		changePage: function(){
+			this.currentPage = "course";
+		}
+	});
+</script>
+
+</polymer-element>
